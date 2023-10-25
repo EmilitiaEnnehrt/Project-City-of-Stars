@@ -17,6 +17,87 @@
 	icon = 'icons/turf/wall_masks.dmi'
 	icon_state = "cult"
 
+/turf/simulated/wall/tomb_king
+	name = "strange wall"
+	desc = "A reinforced wall painted obsidian and gold, glyphs and strange depictions of unknown tales told in images decorate the base."
+	icon = 'icons/turf/wall_masks.dmi'
+	icon_state = "Nashef_standard"
+	icon_base = "Nashef_standard"
+	icon_base_override = "Nashef_standard"
+	icon_base_reinf = "Nashef_reinforced"
+
+/turf/simulated/wall/tomb_king/New(var/newloc)
+	..(newloc, MATERIAL_STEEL)
+
+/turf/simulated/wall/church
+	name = "church wall"
+	desc = "A reinforced wall with golden triming, latin and with faithful depictions of tales told in images decorate the base."
+	icon = 'icons/turf/wall_masks.dmi'
+	icon_state = "church_standard"
+	icon_base = "church_standard"
+	icon_base_override = "church_standard"
+	icon_base_reinf = "church_reinforced"
+	base_color_override = "#FFFFFF"
+	reinf_color_override = "#FFFFFF"
+
+/turf/simulated/wall/church/New(var/newloc)
+	..(newloc, MATERIAL_STEEL)
+
+/turf/simulated/wall/church_reinforced
+	name = "church wall"
+	desc = "A reinforced wall with golden triming, latin and with faithful depictions of tales told in images decorate the base."
+	icon_state = "church_reinforced"
+	icon_base_override = "church_standard"
+	icon_base_reinf_override = "church_reinforced"
+	icon = 'icons/turf/wall_masks.dmi'
+	base_color_override = "#FFFFFF"
+	reinf_color_override = "#FFFFFF"
+
+/turf/simulated/wall/church_reinforced/New(var/newloc)
+	..(newloc, MATERIAL_PLASTEEL, MATERIAL_PLASTEEL) //3strong
+
+/turf/simulated/wall/rock
+	name = "rock wall"
+	desc = "A wall of rocks."
+	icon = 'icons/turf/wall_masks.dmi'
+	icon_state = "rockold"
+	icon_base_override = "rockold"
+
+/turf/simulated/wall/wood
+	name = "wooden wall"
+	desc = "A wall made out of wooden planks."
+	icon = 'icons/turf/wall_masks.dmi'
+	icon_state = "wood"
+	icon_base_override = "wood"
+
+/turf/simulated/wall/ornate_wood
+	name = "ornate wooden wall"
+	desc = "A woodne wall covered in ornate carvings."
+	icon = 'icons/turf/wall_masks.dmi'
+	icon_state = "woodenwall"
+	icon_base_override = "woodenwall"
+
+/turf/simulated/wall/reinforced_ornate_wood
+	name = "reinforced ornate wooden wall"
+	desc = "A reinforced wall covered in ornate wooden carvings."
+	icon = 'icons/turf/wall_masks.dmi'
+	icon_state = "woodenwall_reinforced"
+	icon_base_override = "woodenwall_reinforced"
+
+/turf/simulated/wall/plasteel
+	name = "plasteel wall"
+	desc = "A strong plasteel wall made out of alloy."
+	icon = 'icons/turf/wall_masks.dmi'
+	icon_state = "plasteel_standard"
+	icon_base_override = "plasteel_standard"
+
+/turf/simulated/wall/reinforced_plasteel
+	name = "reinforced plasteel wall"
+	desc = "A strong plasteel wall made out of alloy and strengthened with extra platings."
+	icon = 'icons/turf/wall_masks.dmi'
+	icon_state = "plasteel_reinforced"
+	icon_base_override = "plasteel_reinforced"
+
 /turf/simulated/shuttle/wall
 	name = "wall"
 	icon_state = "wall1"
