@@ -14,6 +14,46 @@
 		list(CRAFT_MATERIAL, 1, MATERIAL_WOOD)
 	)
 
+/datum/craft_recipe/floor/ashwood
+	name = "ash wood floor tile"
+	result = /obj/item/stack/tile/wood/ashen
+	icon_state = "woodworking"
+	steps = list(
+		list(CRAFT_MATERIAL, 1, MATERIAL_WOOD)
+	)
+
+/datum/craft_recipe/floor/redashen
+	name = "red ash wood floor tile"
+	result = /obj/item/stack/tile/wood/ashen/red
+	icon_state = "woodworking"
+	steps = list(
+		list(CRAFT_MATERIAL, 1, MATERIAL_WOOD)
+	)
+
+/datum/craft_recipe/floor/dullashen
+	name = "dull ash wood floor tile"
+	result = /obj/item/stack/tile/wood/ashen/dull
+	icon_state = "woodworking"
+	steps = list(
+		list(CRAFT_MATERIAL, 1, MATERIAL_WOOD)
+	)
+
+/datum/craft_recipe/floor/rustic
+	name = "rustic wood floor tile"
+	result = /obj/item/stack/tile/wood/old
+	icon_state = "woodworking"
+	steps = list(
+		list(CRAFT_MATERIAL, 1, MATERIAL_WOOD)
+	)
+
+/datum/craft_recipe/floor/veridicalrustic
+	name = "veridical rustic wood floor tile"
+	result = /obj/item/stack/tile/wood/old/veridical
+	icon_state = "woodworking"
+	steps = list(
+		list(CRAFT_MATERIAL, 1, MATERIAL_WOOD)
+	)
+
 /datum/craft_recipe/floor/classic/cafe
 	name = "cafe floor tile"
 	result = /obj/item/stack/tile/floor/cafe
