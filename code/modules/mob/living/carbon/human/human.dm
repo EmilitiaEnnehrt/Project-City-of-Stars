@@ -9,6 +9,7 @@
 	var/embedded_flag	  //To check if we've need to roll for damage on movement while an item is imbedded in us.
 	var/obj/item/rig/wearing_rig // This is very not good, but it's much much better than calling get_rig() every update_lying_buckled_and_verb_status() call.
 	var/using_scope // This is not very good either, because I've copied it. Sorry.
+	var/show_title = TRUE
 
 /mob/living/carbon/human/Initialize(new_loc, new_species)
 	hud_list[HEALTH_HUD]      = image('icons/mob/hud.dmi', src, "hudhealth100", ON_MOB_HUD_LAYER)
@@ -292,6 +293,8 @@ var/list/rank_prefix = list(\
 		id = wear_id.GetIdCard()
 	if(!id)
 		id = get_idcard()
+	if(show_title == FALSE)
+		return ""
 	if(id)
 		rank = id.rank
 		if(rank_prefix[rank])
@@ -809,6 +812,13 @@ var/list/rank_prefix = list(\
 	set category	= "IC"
 	set src			= usr
 	sanity?.ui_interact(src)
+
+/mob/living/carbon/human/verb/Toggle_Title()
+	set name = "Toggle Title"
+	set desc = "Shows or hides your title."
+	set category = "IC"
+	show_title = !show_title
+	to_chat(usr, "You change your mind about showing your title.")
 
 /mob/living/carbon/human/verb/check_pulse()
 	set category = "Object"
